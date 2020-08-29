@@ -1,0 +1,14 @@
+.btn-white {
+    background-color: #fff;
+    box-shadow: -2px 4px 5px 0px #4a47475e;
+}
+
+.btn-white:hover,
+.btn-white:active {
+    // box-shadow: -3px -2px 5px 0px #4a47475e;
+    background-color: rgb(247, 247, 247);
+}
+
+.btn-white:focus {
+    box-shadow: 2px -2px 5px 0px #4a47475e;
+}

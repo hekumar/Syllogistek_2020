@@ -1,0 +1,69 @@
+.iword {
+    color: rgb(162, 204, 224);
+}
+
+.true {
+    padding-left: 1rem;
+    color: #fff;
+}
+
+.flag {
+    font-weight: 600;
+    line-height: 1.5rem;
+    z-index: 1;
+    display: inline;
+    padding: 0.2rem 0.5rem;
+    align-self: flex-start;
+    // color: white;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    letter-spacing: 1.5px;
+    padding: 0px 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #a2cce0;
+}
+
+.controls-container {
+    position: absolute;
+    top: 60%;
+    // right: -10%;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+}
+
+.carousel-controls a {
+    background: #bdb4b4d1;
+    margin-right: 0.3rem;
+    padding: 0.575rem 0.3rem 0.2rem;
+}
+
+.carousel-controls a.right-control {
+    border-top-right-radius: 0.875rem;
+    border-bottom-right-radius: 0.875rem;
+}
+
+.carousel-controls a.left-control {
+    border-top-left-radius: 0.875rem;
+    border-bottom-left-radius: 0.875rem;
+}
+
+.carousel-controls a.left-control:hover,
+.carousel-controls a.right-control:hover {
+    background: #dbd2d2d1;
+}
+
+.slide-banner {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #14351985;
+}

@@ -1,0 +1,42 @@
+<div class="contain">
+
+    <app-banner-container></app-banner-container>
+    <div class="pb-2">
+        <h2 class="text-center">Explore our services to get started with the learning.</h2>
+    </div>
+    <div>
+        <app-carousel-box id="LServices" [boxContents]="data1"></app-carousel-box>
+        <app-carousel-box id="EServices" [boxContents]="data2"></app-carousel-box>
+    </div>
+</div>
+
+
+<app-team id="TContent"></app-team>
+
+<div class="bg-lightBlue flex-column-reverse flex-lg-row d-flex justify-content-around pt-4">
+    <!-- <div class="d-flex"> -->
+    <div class="align-self-center">
+        <img class="img-fluid" src="../assets/ceo.png">
+    </div>
+    <!-- <div class="p-4 align-self-center">
+        <b>At Syllogistek,</b> <br>
+        <p>we are a group of Industry veterans who are dedicated to</p>
+        <p> create talents and solutions for tomorrow</p>
+    </div> -->
+    <!-- </div> -->
+    <div class="cube_pos" style="min-height: 21rem;">
+        <app-cubemotion></app-cubemotion>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+
+        <button style="border-radius: 50%;" class="btn btn-white p-1">
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#4388b1" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+              </svg>
+        </button>
+        <span class="ml-2" style="color: #4388b1;">View Gallery</span>
+    </div>
+
+
+</div>

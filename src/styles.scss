@@ -1,0 +1,289 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+.testimonial.active {
+    animation: fadeIn ease-in-out 250ms;
+    -webkit-animation: fadeIn ease-in-out 250ms;
+    -moz-animation: fadeIn ease-in-out 250ms;
+    -o-animation: fadeIn ease-in-out 250ms;
+    -ms-animation: fadeIn ease-in-out 250ms;
+}
+
+.bg-lightBlue {
+    background-color: #f3f8ff;
+}
+
+.ceo_quote {
+    position: relative;
+    height: 40%;
+    top: 15%;
+    left: -15%;
+}
+
+.border_f_top {
+    border-top: 1px solid #cddef7;
+}
+
+// @keyframes active {
+// 0% {display: none;}
+// 100% {display:block;}
+// }
+@media screen and (max-width: 400px) {
+    .testimonial_title {
+        width: 100%;
+        font-size: 0.875rem;
+        h5 {
+            font-size: 1rem;
+        }
+    }
+    // .quote {
+    //     width: 85% !important;
+    //     // font-size: 0.85rem;
+    //     font-size: 0.685rem !important;
+    //     h5 {
+    //         font-size: 1rem;
+    //     }
+    // }
+}
+
+@media screen and (max-width: 889px) {
+    .slide-true {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    .testimonial-profile {
+        width: 100px;
+        height: 100px;
+    }
+    .testimonial_title,
+    .quote {
+        font-size: 0.85rem;
+        h5 {
+            font-size: 1rem;
+        }
+    }
+    .quote_icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .quote {
+        width: 85% !important;
+        font-size: 0.65rem !important;
+    }
+    .testimonial-container {
+        max-height: 7rem;
+        top: -4rem !important;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .service_card_text h6 {
+        position: relative !important;
+        padding-right: 0 !important;
+        width: 65%;
+    }
+    // .quote {
+    //     width: 85% !important;
+    // }
+}
+
+@media screen and (max-width: 700px) and (min-width: 401px) {
+    .service_card_text h6 {
+        position: relative !important;
+        padding-right: 0 !important;
+        width: 65%;
+    }
+    .testimonial-container {
+        max-height: 7rem;
+        top: -3rem !important;
+    }
+    .testimonial-profile {
+        width: 80px;
+        height: 80px;
+    }
+    .testimonial_title {
+        font-size: 0.55rem;
+        h5 {
+            font-size: 0.875rem;
+        }
+    }
+    .quote {
+        text-align: justify;
+        font-size: 0.65rem;
+    }
+    .quote_icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-brand {
+        margin-right: 0;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:1450px) {
+    nav,
+    .banner-container {
+        display: block;
+        margin: 0 auto;
+        padding: 0 0;
+        max-width: 96rem;
+    }
+    .banner-container {
+        margin-top: 1rem;
+        border-radius: 5px;
+        box-shadow: 5px 3px 25px 0 rgba(46, 61, 73, .4);
+    }
+    // header {
+    //     margin: 0 18rem;
+    // box-shadow: 0 0 10px #706f6fd5;
+    // }
+    nav.navbar {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 1125px) {
+    .banner-container {
+        // box-shadow: 5px 3px 25px 0 rgba(46,61,73,.4);
+        display: block;
+        margin: 0 auto;
+        // padding: 0 2rem;
+        margin-top: 1rem;
+        max-width: 150vh;
+    }
+    .banner-container {
+        box-shadow: 5px 3px 25px 0 rgba(46, 61, 73, .4);
+    }
+    nav.navbar {
+        padding: 0 0.825rem;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1125px) {
+    nav.navbar {
+        font-size: 0.825rem !important;
+    }
+}
+
+// nav.navbar {
+//     padding: 1rem 1rem;
+// }
+// @media (max-width: 768px) {
+//     .carousel-inner .carousel-item>div {
+//         display: none;
+//     }
+//     .carousel-inner .carousel-item>div:first-child {
+//         display: block;
+//     }
+// }
+////////////////////////////////////////////////////////  Container for body START  ////////////////////////////////////////////
+@media screen and (min-width: 73.75rem) {
+    .contain {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .contain {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (min-width: 30rem) {
+    .contain {
+        padding-left: 15.84px;
+        padding-right: 15.84px;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .contain {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+
+.contain {
+    max-width: 78.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 48px 12px;
+}
+
+@media screen and (min-width: 73.75rem) {
+    .contain {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .contain {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (min-width: 30rem) {
+    .contain {
+        padding-left: 15.84px;
+        padding-right: 15.84px;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .contain {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    .contain {
+        max-width: 78.75rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 12px;
+    }
+}
+
+@media screen and (min-width: 73.75rem) {
+    .contain,
+    .contain--small {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .contain,
+    .contain--small {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (min-width: 30rem) {
+    .contain,
+    .contain--small {
+        padding-left: 15.84px;
+        padding-right: 15.84px;
+    }
+    .contain,
+    .contain--small {
+        max-width: 78.75rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem .75rem;
+    }
+}
+
+//  Container for Body END

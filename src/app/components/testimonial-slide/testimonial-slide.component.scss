@@ -1,0 +1,40 @@
+// testimonial-banner 
+.testimonial-container {
+    position: relative;
+    max-height: 8rem;
+    top: -4rem;
+}
+
+.testimonial-banner {
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    border-bottom: 8px solid rgb(67, 136, 177);
+}
+
+.testimonial-profile {
+    // position: absolute;
+    // top: -0.675rem;
+    // left: -10.765px;
+    // width: 9rem;
+    max-height: 8rem;
+    // min-width: 100px;
+    // max-width: 200px;
+}
+
+.testimonial_title {
+    // position: relative;
+    // min-width: 25rem;
+    // left: 9rem;
+    // letter-spacing: 1px;
+    max-height: 8rem;
+    color: green;
+    // display: flex;
+    // flex-direction: column;
+}
+
+.quote {
+    color: white;
+    width: 55%;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}

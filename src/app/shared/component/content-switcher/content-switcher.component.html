@@ -1,0 +1,6 @@
+<div >
+    <ul class="course-catagory" >
+      <li (click)="selectItem(i)" class="catagory" *ngFor="let item of items; let i= index" ><h5  [ngClass]="{'selected' : selected == i}" class="catagory__title">{{item | uppercase}}</h5></li>
+     
+    </ul>
+  </div>
