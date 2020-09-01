@@ -18,6 +18,8 @@ import { TermConditionComponent } from './components/term-condition/term-conditi
 import { BodyComponent } from './components/body/body.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { RefundPolicyComponent } from './components/refund-policy/refund-policy.component';
+import { SharedModule} from '../app/shared/shared.module';
+import { AboutComponent } from './components/about/about.component'
 
 @NgModule({
   declarations: [
@@ -35,10 +37,12 @@ import { RefundPolicyComponent } from './components/refund-policy/refund-policy.
     TermConditionComponent,
     BodyComponent,
     PrivacyPolicyComponent,
-    RefundPolicyComponent
+    RefundPolicyComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],

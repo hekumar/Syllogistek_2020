@@ -69,7 +69,7 @@ nav.navbar {
 }
 
 .divider {
-    margin: 6px 0.2rem;
+    margin: 6px 0;
     display: inline;
 }
 
@@ -85,7 +85,7 @@ nav.navbar {
 .nav-link .button-link {
     color: $TextColor;
     text-decoration: none;
-    margin-right: 0.5rem;
+    margin-right: 0.1rem;
 }
 
 .nav-link span:hover,
@@ -93,26 +93,17 @@ nav.navbar {
     color: $TextHoverColor;
 }
 
-.button-success {
+.button {
     font-size: .8125rem;
     font-weight: 600;
     letter-spacing: 0.05rem;
-    /* line-height: 1.8125rem; */
-    color: #fff;
     text-decoration: none;
     text-align: center;
-    background-color: #4388b1;
     height: 2rem;
     min-width: 131px;
     width: auto;
     padding: 0.3rem 1.4rem;
     border-radius: 5px;
-    box-shadow: 0 0 8px 0 rgba(17, 22, 26, .16), 0 4px 8px 0 rgba(17, 22, 26, .08), 0 8px 16px 0 rgba(17, 22, 26, .08);
-}
-
-.button-success:hover {
-    background-color: $TextHoverColor;
-    box-shadow: none;
 }
 
 nav {

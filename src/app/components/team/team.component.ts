@@ -45,8 +45,8 @@ export class TeamComponent implements OnInit {
     } else if (innerWidth > 1024 && innerWidth >= 780) {
       this.isSmallScreen = false;
       // this.breakpointService.isSmallScreen = false;
-      if (this.showItemPerPage != 4) {
-        this.showItemPerPage = 4;
+      if (this.showItemPerPage != 3) {
+        this.showItemPerPage = 3;
         this.teamView = _.chunk(this.team, this.showItemPerPage);
       }
     }
@@ -71,17 +71,18 @@ export class TeamComponent implements OnInit {
         "photo" : "../assets/people/Parijat.png"
     },
     {
-      "name": "Rina Sen",
-      "position": "Director - HR, Admin",
-      "description": "Masters in Computer Science with experience in Training, Quality Assurance, Product and Application development.",
-      "photo": "../assets/people/Rina.jpg"
-    },
-    {
       "name": "Suman Sasmal",
       "position": "Management Adviser",
       "description": "Suman Sasmal champions change in high-impact space today, after having led a global corporate career, spanning across 30 years.",
       "photo": "../assets/people/Suman.png"
     },
+    {
+      "name": "Rina Sen",
+      "position": "Director - HR, Admin",
+      "description": "Masters in Computer Science with experience in Training, Quality Assurance, Product and Application development.",
+      "photo": "../assets/people/Rina.jpg"
+    },
+    
     {
       "name": "Sumit Misra",
       "position": "Technology Advisor",

@@ -18,51 +18,68 @@
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link scrolly" (click)="scrollToPos('TContent')"><span>The Team</span>
-                        <span *ngIf="!viewSideBar"> <svg class="pointer-down" height="7" viewBox="0 0 12 7" width="12"
+                    <a class="nav-link scrolly" style="cursor: pointer;" (click)="scrollToPos('TContent')"><span>The Team</span>
+                        <span *ngIf="!viewSideBar"> 
+                            <!-- <svg class="pointer-down" height="7" viewBox="0 0 12 7" width="12"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="m105 46 5 5 5-5" fill="none" stroke="#96a0aa" stroke-linecap="round"
                                     stroke-linejoin="round" stroke-width="2" transform="translate(-104 -45)"></path>
-                            </svg></span>
+                            </svg> -->
+                        </span>
     
     
-                        <span *ngIf="viewSideBar" class="explore-icon"><svg height="32" style="fill:#ffffff"
+                        <span *ngIf="viewSideBar" class="explore-icon">
+                            <!-- <svg height="32" style="fill:#ffffff"
                                 viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M22 15.89c0 .319-.146.632-.414.82l-10.175 7.13a.868.868 0 0 1-.499.16c-.503 0-.912-.438-.912-.98V8.98c0-.186.049-.367.141-.524.27-.457.834-.593 1.26-.304l10.174 6.91c.11.075.205.174.276.292.1.165.149.35.149.533v.002z"
                                     fill-rule="evenodd"></path>
-                            </svg></span>
+                            </svg> -->
+                        </span>
     
                     </a>
                 </li>
+                <li class="nav-link pb-1 px-0">
+                    <div class="button--navigation divider"></div>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link scrolly" href="#">
+                    <a class="nav-link scrolly" style="cursor: pointer;" routerLink="/about">
                         <span>About
-                            Syllogistek</span><svg class="pointer-down" height="7" viewBox="0 0 12 7" width="12" xmlns="http://www.w3.org/2000/svg">
+                            Syllogistek</span>
+                        <!-- <svg class="pointer-down" height="7" viewBox="0 0 12 7" width="12" xmlns="http://www.w3.org/2000/svg">
                             <path d="m105 46 5 5 5-5" fill="none" stroke="#96a0aa" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" transform="translate(-104 -45)"></path>
-                        </svg>
+                        </svg> -->
                     </a>
                 </li>
-                <!-- href="#LServices" -->
+                <li class="nav-link pb-1 px-0">
+                    <div class="button--navigation divider"></div>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link scrolly" (click)="scrollToPos('LServices')"><span>Learning
-                            Services</span><svg class="pointer-down" height="7" viewBox="0 0 12 7" width="12"
+                    <a class="nav-link scrolly" style="cursor: pointer;" (click)="scrollToPos('LServices')"><span>Learning
+                            Services</span>
+                            <!-- <svg class="pointer-down" height="7" viewBox="0 0 12 7" width="12"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="m105 46 5 5 5-5" fill="none" stroke="#96a0aa" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" transform="translate(-104 -45)"></path>
-                        </svg></a>
+                        </svg> -->
+                    </a>
+                </li>
+                <li class="nav-link pb-1 px-0">
+                    <div class="button--navigation divider"></div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link scrolly" (click)="scrollToPos('EServices')"><span>Enterprise
-                            Services</span><svg class="pointer-down" height="7" viewBox="0 0 12 7" width="12"
+                    <a class="nav-link scrolly" style="cursor: pointer;" (click)="scrollToPos('EServices')"><span>Enterprise
+                            Services</span>
+                            <!-- <svg class="pointer-down" height="7" viewBox="0 0 12 7" width="12"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="m105 46 5 5 5-5" fill="none" stroke="#96a0aa" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" transform="translate(-104 -45)"></path>
-                        </svg></a>
+                        </svg> -->
+                    </a>
                 </li>
-                <li class="nav-link pb-0">
-                    <div class="button button--navigation divider"></div>
+                <li class="nav-link pb-1">
+                    <div class="button--navigation divider"></div>
                 </li>
                 <li class="nav-link">
                     <a title="Sign In" href="https://readwithfun.com/login/index.php" class="button-link">Sign
@@ -70,7 +87,7 @@
 
                 <li class="nav-link">
 
-                    <a title="Contact Us" href="#" class="button-success">Contact Us</a>
+                    <a title="Contact Us" href="#" class="button btn-primary my-1">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -91,7 +108,7 @@
                                 fill-rule="evenodd"></path>
                         </svg></div>
                 </button></li>
-            <li class="nav-side-item"><button class="button button--navigation"><span>About
+            <li class="nav-side-item"><button class="button button--navigation" routerLink="/about"><span>About
                         Syllogistek</span>
                     <div class="explore-icon"><svg height="32" style="fill:#ffffff" viewBox="0 0 32 32" width="32"
                             xmlns="http://www.w3.org/2000/svg">

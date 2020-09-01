@@ -1,115 +1,143 @@
 export let carousalData1 = [
     [{
         courseName: "Graphic Design using Corel Draw",
-        instructor: "Parijat Roy"
+        course_img: "starters/Graphic_Design_using_Coreldraw.png",
+        instructor: "Parijat Roy", class: "IV - VII", tag: ""
     },
     {
         courseName: "Advanced Graphic Design",
-        instructor: "Parijat Roy"
+        course_img: "starters/Advance_Graphic_Design.png",
+        instructor: "Parijat Roy", class: "VIII - XII", tag: "New"
     },
     {
         courseName: "Fun with Python",
-        instructor: "Parijat Roy"
+        course_img: "starters/Fun_with_Python.png",
+        instructor: "Parijat Roy", class: "VI - VIII", tag: "Popular"
     },
     {
-        courseName: "More with Python",
-        instructor: "Parijat Roy"
+        courseName: "Python for Beginners",
+        course_img: "starters/Python_for_beginners.png",
+        instructor: "Parijat Roy", class: "IX - XII", tag: ""
     },
     {
         courseName: "JAVA programming",
-        instructor: "Parijat Roy"
+        course_img: "starters/Java_Programming.png",
+        instructor: "Parijat Roy", class: "VIII - XII", tag: ""
     },
     {
         courseName: "Web development",
-        instructor: "Parijat Roy"
+        course_img: "starters/Basic_Web_Development.png",
+        instructor: "Parijat Roy", class: "VI - VIII", tag: ""
     },
     {
         courseName: "Advance web development with Animation",
-        instructor: "Parijat Roy"
+        course_img: "starters/Advance_Web_Development.png",
+        instructor: "Parijat Roy", class: "IX - XII", tag: "New"
     },
     {
         courseName: "Entrepreneurship for kids",
-        instructor: "Parijat Roy"
+        course_img: "starters/Entrepreneurship_Skill.png",
+        instructor: "Parijat Roy", class: "IV - VII", tag: ""
     }
     ],
+    
     [
         {
             courseName: "Full Stack PHP",
-            instructor: "Parijat Roy"
+            course_img: "collegegoers/fullstackphp.png",
+            instructor: "Parijat Roy", duration: "40 Hr", tag: ""
         },
         {
-            courseName: "Python for beginners",
-            instructor: "Parijat Roy"
+            courseName: "Python for Beginners",
+            course_img: "collegegoers/python4b.png",
+            instructor: "Parijat Roy", duration: "100 Hr with Live Project", tag: ""
         },
         {
-            courseName: "MEAN stack programming",
-            instructor: "Parijat Roy"
+            courseName: "MEAN Stack Programming",
+            course_img: "collegegoers/meanstack.png",
+            instructor: "Parijat Roy", duration: "100 Hr with Live Project", tag: ""
         },
         {
             courseName: "DataScience using Python",
-            instructor: "Parijat Roy"
+            course_img: "collegegoers/dsbypython.png",
+            instructor: "Parijat Roy", duration: "100 Hr with Live Project", tag: "Popular"
         },
         {
             courseName: "Competitive coding",
-            instructor: "Parijat Roy"
+            course_img: "collegegoers/competitivecoding.png",
+            instructor: "Parijat Roy", duration: "60 Hr Program", tag: "New"
         },
         {
-            courseName: "Entrepreneurship and digital marketing",
-            instructor: "Parijat Roy"
+            courseName: "Entrepreneurship And Digital Marketing",
+            course_img: "collegegoers/entrepreneurship.png",
+            instructor: "Parijat Roy", duration: "60 Hr Program", tag: "New"
         },
         {
-            courseName: "Cybersecurity",
-            instructor: "Parijat Roy"
+            courseName: "Cyber Security",
+            course_img: "collegegoers/cybersecurity.png",
+            instructor: "Parijat Roy", duration: "60 Hr", tag: ""
         }
     ],
     [
         {
             courseName: "Python",
-            instructor: "Parijat Roy"
+            course_img: "technocrats/Python.png",
+            instructor: "Parijat Roy", duration: "40 Hr", tag: "Popular"
         },
         {
             courseName: "DataScience",
-            instructor: "Parijat Roy"
+            course_img: "technocrats/Datascience.png",
+            instructor: "Parijat Roy", duration: "40 Hr", tag: "Popular"
         },
         {
             courseName: "JAVA with WebServices",
-            instructor: "Parijat Roy"
+            course_img: "technocrats/Java_with_web_services.png",
+            instructor: "Parijat Roy", duration: "50 Hr", tag: "New"
         },
         {
             courseName: "JAVA",
-            instructor: "Parijat Roy"
+            course_img: "technocrats/Java_Programming.png",
+            instructor: "Parijat Roy", duration: "30 Hr", tag: ""
         },
         {
             courseName: "AZURE",
-            instructor: "Parijat Roy"
+            course_img: "technocrats/Azure_Course.png",
+            instructor: "Parijat Roy", duration: "20 Hr", tag: ""
         },
         {
             courseName: "AWS",
-            instructor: "Parijat Roy"
+            course_img: "technocrats/AWS.png",
+            instructor: "Parijat Roy", duration: "40 Hr", tag: ""
         },
         {
-            courseName: "Cybersecurity",
-            instructor: "Parijat Roy"
+            courseName: "Cyber Security",
+            course_img: "technocrats/Cybersecurity.png",
+            instructor: "Parijat Roy", duration: "60 Hr", tag: ""
         },
         {
             courseName: "Power BI",
-            instructor: "Parijat Roy"
+            course_img: "technocrats/Power_BI.png",
+            instructor: "Parijat Roy", duration: "20 Hr", tag: ""
         },
         {
             courseName: ".Net",
-            instructor: "Parijat Roy"
+            course_img: "technocrats/.net.png",
+            instructor: "Parijat Roy", duration: "30 Hr", tag: ""
         },
         {
             courseName: "MEAN Stack",
-            instructor: "Parijat Roy"
+            course_img: "technocrats/MEAN_Stack_Programming.png",
+            instructor: "Parijat Roy", duration: "40 Hr", tag: ""
         },
         {
             courseName: "MERN Stack",
-            instructor: "Parijat Roy"
+            course_img: "technocrats/MERN_Stack_Programming.png",
+            instructor: "Parijat Roy", duration: "40 Hr", tag: "New"
         },
         {
             courseName: "Full Stack PHP",
-            instructor: "Parijat Roy"
+            course_img: "technocrats/Full_Stack_PHP.png",
+            instructor: "Parijat Roy", duration: "40 Hr", tag: ""
         }
     ]
 ];
@@ -117,48 +145,59 @@ export let carousalData1 = [
 export let carousalData2 = [
     [{
         courseName: "Website Development and Maintenance",
-        instructor: "Parijat Roy"
+        course_img: "appDevM/MEAN_Stack_Programming.png",
+        instructor: "Parijat Roy", duration: "", tag: ""
     },
     {
         courseName: "Application development and Maintenance",
-        instructor: "Parijat Roy"
+        course_img: "appDevM/meanstack.png",
+        instructor: "Parijat Roy", duration: "", tag: ""
     }
     ], [
         {
             courseName: "SEO",
-            instructor: "Parijat Roy"
+            course_img: "appDevM/DM.png",
+            instructor: "Parijat Roy", duration: "", tag: ""
         },
         {
             courseName: "Online Advertisement",
-            instructor: "Parijat Roy"
+            course_img: "appDevM/DM.png",
+            instructor: "Parijat Roy", duration: "", tag: ""
         }], [
         {
-            courseName: "Live Online Classes",
-            instructor: "Parijat Roy"
+            courseName: "Live Online durationes",
+            course_img: "fullstackphp",
+            instructor: "Parijat Roy", duration: "", tag: ""
         },
         {
             courseName: "Professional practitioners and developers as Intellectual Partners and trainers",
-            instructor: "Parijat Roy"
+            course_img: "fullstackphp",
+            instructor: "Parijat Roy", duration: "", tag: ""
         },
         {
             courseName: "Hands-on Training",
-            instructor: "Parijat Roy"
+            course_img: "fullstackphp",
+            instructor: "Parijat Roy", duration: "", tag: ""
         },
         {
             courseName: "Customized course content",
-            instructor: "Parijat Roy"
+            course_img: "fullstackphp",
+            instructor: "Parijat Roy", duration: "", tag: ""
         },
         {
-            courseName: "ersonalized attention with remedial classes",
-            instructor: "Parijat Roy"
+            courseName: "ersonalized attention with remedial durationes",
+            course_img: "fullstackphp",
+            instructor: "Parijat Roy", duration: "", tag: ""
         },
         {
             courseName: "Industry readiness training",
-            instructor: "Parijat Roy"
+            course_img: "fullstackphp",
+            instructor: "Parijat Roy", duration: "", tag: ""
         },
         {
             courseName: "Centralized online Learning management platform",
-            instructor: "Parijat Roy"
+            course_img: "fullstackphp",
+            instructor: "Parijat Roy", duration: "", tag: ""
         }
     ]
 

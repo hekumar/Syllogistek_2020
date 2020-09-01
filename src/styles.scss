@@ -13,6 +13,10 @@
     background-color: #f3f8ff;
 }
 
+.fw-200 {
+    font-weight: 200;
+}
+
 .ceo_quote {
     position: relative;
     height: 40%;
@@ -46,12 +50,16 @@
     // }
 }
 
-@media screen and (max-width: 889px) {
-    .slide-true {
-        h1 {
-            font-size: 1.5rem;
-        }
+.slide-true {
+    h1 {
+        font-size: 2.8vw;
     }
+    h3 {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 889px) {
     .testimonial-profile {
         width: 100px;
         height: 100px;
@@ -70,6 +78,11 @@
 }
 
 @media screen and (max-width: 576px) {
+    // .slide-true {
+    //     h1 {
+    //         font-size: 0.875rem;
+    //     }
+    // }
     .quote {
         width: 85% !important;
         font-size: 0.65rem !important;
@@ -122,6 +135,11 @@
 }
 
 @media screen and (max-width: 1024px) {
+    // .slide-true {
+    //     h1 {
+    //         font-size: 1vwrem;
+    //     }
+    // }
     .navbar-brand {
         margin-right: 0;
         display: block;
@@ -287,3 +305,11 @@
 }
 
 //  Container for Body END
+.btn-primary {
+    background-color: #4388b1;
+    border-color: #4388b1;
+}
+
+.btn-primary:hover {
+    background-color: #1a80ceda;
+}

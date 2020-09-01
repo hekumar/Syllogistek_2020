@@ -13,13 +13,15 @@
                             <div class="d-flex justify-content-center">
                                 <a class="course-card">
                                     <div class="course_card_header">
-                                        <div class="course_card_header-prefix"></div>
-                                        <div class="course_card_flag course_card_flag--new">new</div>
+                                        <div class="course_card_header-prefix">
+                                            <img class="course_card_header" style="width: 100%" src="../../../assets/{{item.course_img}}">
+                                        </div>
+                                        <div *ngIf="item.tag" class="course_card_flag course_card_flag--new">{{item.tag}}</div>
                                     </div>
-                                    <div class="course_card_body">{{item.courseName}}</div>
+                                    <div class="course_card_body">{{ item.courseName}}</div>
                                     <div class="course_card_footer">
-                                        <h5 class="course_card_footer__title">INSTRUCTOR</h5>
-                                        <div class="course_card_footer__body">{{item.instructor}}</div>
+                                        <h5 class="course_card_footer__title">{{ item.class ? 'CLASSES' : 'Duration'}}</h5>
+                                        <div class="course_card_footer__body">{{item.class ? item.class : item.duration}}</div>
                                     </div>
                                 </a>
                             </div>

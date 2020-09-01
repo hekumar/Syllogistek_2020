@@ -1,44 +1,45 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { trigger, transition, state, animate, style } from '@angular/animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
-  animations:[trigger('fade', [
+  animations: [trigger('fade', [
 
-      transition('void => *', [
-        style({
-          opacity: 0,
-          height:0
-        }),
-        animate(1000)
-      ]),
-      transition('* => void', [
-        animate(200, style({
-          opacity: 0
-        }))
-      ])
+    transition('void => *', [
+      style({
+        opacity: 0,
+        height: 0
+      }),
+      animate(1000)
+    ]),
+    transition('* => void', [
+      animate(200, style({
+        opacity: 0
+      }))
     ])
-    ]
+  ])
+  ]
 })
 export class HeaderComponent implements OnInit {
 
-  viewSideBar : boolean = false;
-  constructor() { }
+  viewSideBar: boolean = false;
+  constructor(private router: Router) { }
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
     // console.log(window.pageYOffset);
-    
-     if (window.pageYOffset > 550 && window.innerWidth > 890) {
-       let element = document.getElementById('navbar');
-      //  element.classList.remove('contain'); 
-       element.classList.add('sticky');
-     } else if(window.pageYOffset < 10 && window.innerWidth > 890){
+
+    if (window.pageYOffset > 550 && window.innerWidth > 890) {
       let element = document.getElementById('navbar');
-        element.classList.remove('sticky'); 
-        // element.classList.add('contain');
-     }
+      //  element.classList.remove('contain'); 
+      element.classList.add('sticky');
+    } else if (window.pageYOffset < 10 && window.innerWidth > 890) {
+      let element = document.getElementById('navbar');
+      element.classList.remove('sticky');
+      // element.classList.add('contain');
+    }
   }
 
   ngOnInit(): void {
@@ -52,24 +53,39 @@ export class HeaderComponent implements OnInit {
   }
 
   scrollToPos_sm(pos) {
-    // console.log(window.innerHeight, window.outerHeight);
-    console.log(document.getElementById('EServices'));
-    
-    this.closeNav();
-    document.scrollingElement.scroll({
-      top: pos,
-      behavior: 'smooth'
+    this.router.navigate(['/']).then(res => {
+      this.closeNav();
+      document.scrollingElement.scroll({
+        top: pos,
+        behavior: 'smooth'
+      })
     })
   }
+  
   scrollToPos(e) {
+    let element, topPos;
+    element = document.getElementById(e);
     this.closeNav();
-    let element = document.getElementById(e);
-    var topPos = element.getBoundingClientRect().top + window.scrollY - 140;
-    document.scrollingElement.scroll({
-      top: topPos,
-      behavior: 'smooth'
-    })
-   
+    if(element) {
+      topPos = element.getBoundingClientRect().top + window.scrollY - 140;
+    }
+     
+    if(this.router.routerState.snapshot.url != '/') {
+      console.log(this.router.routerState.snapshot.url);
+      this.router.navigate(['/']).then(res => {
+        element = document.getElementById(e);
+        topPos = element.getBoundingClientRect().top + window.scrollY;
+        document.scrollingElement.scroll({
+          top: topPos,
+          behavior: 'smooth'
+        })
+      });
+    } else {
+      document.scrollingElement.scroll({
+        top: topPos,
+        behavior: 'smooth'
+      })
+    } 
   }
 
 }

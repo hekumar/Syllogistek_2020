@@ -4,17 +4,24 @@ import { TermConditionComponent } from './components/term-condition/term-conditi
 import { BodyComponent } from './components/body/body.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { RefundPolicyComponent } from './components/refund-policy/refund-policy.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 const routes: Routes = [
   { path:'', pathMatch:'full', component: BodyComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'term', component: TermConditionComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'refund-policy', component: RefundPolicyComponent },
+  { path: 'admin', 
+    loadChildren: () => 
+    import('../app/admin/admin.module').then(m => m.AdminModule),
+    // canActivate: [adminGuard]
+}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,  { useHash : true, scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
