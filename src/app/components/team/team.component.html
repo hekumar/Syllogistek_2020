@@ -20,8 +20,8 @@
                                         <div style="font-size: 0.75rem;">{{item?.position}}</div>
                                     </div>
 
-                                    <span style="border:1px solid rgb(111, 106, 106);border-radius: 50%;">
-                    <a>
+                                    <span class="readMore" style="border:1px solid rgb(111, 106, 106);border-radius: 50%;">
+                    <a style="cursor: pointer;" (click)="showMore(item)">
                       <svg style="margin: 9px 9px 9px;" width="1em" height="1em" viewBox="0 0 16 16"
                         class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-gallery',
@@ -6,12 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
+  isSmallScreen = false;
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.screenViewHandler(event.target.innerWidth, window.outerWidth);
+  }
+  screenViewHandler(innerWidth, outerWidth) {
+    if (innerWidth <= 686 || outerWidth <= 700) {
 
+      if (!this.isSmallScreen) {
+        this.isSmallScreen = true;
+      }
+    } else {
+      this.isSmallScreen = false;
+    }
+  }
   gallery = [];
   activeId = "1";
   constructor() { }
 
   ngOnInit(): void {
+    this.screenViewHandler(window.innerWidth, window.outerWidth);
     for (let index = 0; index < 21; index++) {
      this.gallery.push(String(index + 1))
       }

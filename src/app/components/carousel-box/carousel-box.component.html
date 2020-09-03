@@ -17,7 +17,7 @@
 
 
         <div>
-            <div [id]="id" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div [id]="id" class="carousel slide" data-interval="5000" data-ride="carousel">
                 <div class="carousel-inner">
 
                     <div *ngFor="let items of selectedView; let i = index" class="carousel-item" [ngClass]="{'active': i==0 }">

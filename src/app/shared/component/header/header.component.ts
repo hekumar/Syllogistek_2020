@@ -74,7 +74,7 @@ export class HeaderComponent implements OnInit {
       console.log(this.router.routerState.snapshot.url);
       this.router.navigate(['/']).then(res => {
         element = document.getElementById(e);
-        topPos = element.getBoundingClientRect().top + window.scrollY;
+        topPos = element.getBoundingClientRect().top + window.scrollY -140;
         document.scrollingElement.scroll({
           top: topPos,
           behavior: 'smooth'
@@ -90,7 +90,6 @@ export class HeaderComponent implements OnInit {
 
   showPopOver() {
     this.popover = true;
-    console.log("Sd");
 }
    hidePopOver() {
     this.popover = false;

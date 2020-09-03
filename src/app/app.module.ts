@@ -21,7 +21,8 @@ import { RefundPolicyComponent } from './components/refund-policy/refund-policy.
 import { SharedModule} from '../app/shared/shared.module';
 import { AboutComponent } from './components/about/about.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
-import { ServicesPanneComponent } from './components/services-panne/services-panne.component'
+import { ServicesPanneComponent } from './components/services-panne/services-panne.component';
+import { ReadMoreComponent } from './components/read-more/read-more.component'
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ServicesPanneComponent } from './components/services-panne/services-pan
     RefundPolicyComponent,
     AboutComponent,
     GalleryComponent,
-    ServicesPanneComponent
+    ServicesPanneComponent,
+    ReadMoreComponent
   ],
   imports: [
     BrowserModule,

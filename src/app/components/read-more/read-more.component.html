@@ -1,0 +1,37 @@
+<div class="modal-header">
+    <div class="d-flex flex-column flex-sm-row">
+        <div>
+            <img [src]="person.photo" alt="..." class="team-img-2 img-responsive" width="180px" />
+        </div>
+        <div class="m-4 p-2 align-self-center">
+            <h4 class="teacher-single-page-header">{{ person.name }}</h4>
+            <p class="teacher-post">{{ person.position }}</p>
+        </div>
+    </div>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" *ngFor="let detail of person.details">
+                <p class="font_7" style="text-align: justify;"><b>{{ detail.head }}</b></p>
+                <p class="font_8" *ngFor="let d of detail.text" style="text-align: justify;">
+                    {{d}}
+                </p>
+                <!-- <ul class="font_8" *ngFor="let d of detail.text">
+          <li style="text-align: justify;">
+            <p class="font_8">{{ d }}</p>
+          </li>
+        </ul> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">
+    Close
+  </button>
+</div>
