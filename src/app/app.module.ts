@@ -19,7 +19,9 @@ import { BodyComponent } from './components/body/body.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { RefundPolicyComponent } from './components/refund-policy/refund-policy.component';
 import { SharedModule} from '../app/shared/shared.module';
-import { AboutComponent } from './components/about/about.component'
+import { AboutComponent } from './components/about/about.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { ServicesPanneComponent } from './components/services-panne/services-panne.component'
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { AboutComponent } from './components/about/about.component'
     BodyComponent,
     PrivacyPolicyComponent,
     RefundPolicyComponent,
-    AboutComponent
+    AboutComponent,
+    GalleryComponent,
+    ServicesPanneComponent
   ],
   imports: [
     BrowserModule,

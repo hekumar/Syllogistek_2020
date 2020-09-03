@@ -15,7 +15,7 @@ export class TeamComponent implements OnInit {
 
 
   screenViewHandler(innerWidth, outerWidth) {
-    console.log(innerWidth, outerWidth);
+    // console.log(innerWidth, outerWidth);
     
     if (innerWidth <= 550 || outerWidth <= 550) {
 

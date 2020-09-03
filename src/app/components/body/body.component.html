@@ -2,18 +2,20 @@
     <app-header>
     </app-header>
 </div>
-<div class="contain">
 
+<div class="contain pb-4 pt-1">
     <app-banner-container></app-banner-container>
-    <div class="pb-2">
-        <h2 class="text-center fw-200">Explore our services to get started with the learning.</h2>
-    </div>
-    <div>
-        <app-carousel-box id="LServices" [boxContents]="data1"></app-carousel-box>
-        <app-carousel-box id="EServices" [boxContents]="data2"></app-carousel-box>
-    </div>
 </div>
 
+<div class="contain py-1">
+    <app-services-panne></app-services-panne>
+</div>
+
+<div class="contain py-1">
+
+    <app-carousel-box id="LServices" [boxContents]="data1"></app-carousel-box>
+    <app-carousel-box id="EServices" [boxContents]="data2"></app-carousel-box>
+</div>
 
 <app-team id="TContent"></app-team>
 
@@ -33,13 +35,13 @@
     </div>
     <div class="d-flex justify-content-center align-items-center">
 
-        <button style="border-radius: 50%;" class="btn btn-white p-1">
+        <button style="border-radius: 50%;" class="btn btn-white p-1" routerLink="/gallery">
             <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#4388b1" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
               </svg>
         </button>
-        <span class="ml-2" style="color: #4388b1;">View Gallery</span>
+        <a routerLink="/gallery"><span class="ml-2" style="color: #4388b1;">View Gallery</span></a>
     </div>
 
 

@@ -24,7 +24,7 @@ import { Router } from '@angular/router';
   ]
 })
 export class HeaderComponent implements OnInit {
-
+  popover = false;
   viewSideBar: boolean = false;
   constructor(private router: Router) { }
   @HostListener('window:scroll', ['$event'])
@@ -86,6 +86,14 @@ export class HeaderComponent implements OnInit {
         behavior: 'smooth'
       })
     } 
+  }
+
+  showPopOver() {
+    this.popover = true;
+    console.log("Sd");
+}
+   hidePopOver() {
+    this.popover = false;
   }
 
 }

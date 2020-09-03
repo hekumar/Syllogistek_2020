@@ -1,11 +1,16 @@
 <div class="">
-    <div id="main_banner" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <div id="main_banner" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="../assets/Main Poster (Poster 1).jpg" alt="First slide">
+                <picture>
+                    <source style="background-repeat: no-repeat;" media="(max-width: 686px)" srcset="../assets/poster1_phone.png">
+                    <img class="d-block w-100" src="../assets/Main Poster (Poster 1).jpg" alt="First slide">
+                </picture>
+
                 <div class="slide-banner">
                     <div>
-                        <div class="slide-true mx-5 mt-1 mt-lg-5 ">
+                        <img src="../../../assets/slide_banner1.png" width="100%">
+                        <!-- <div class="slide-true mx-5 mt-1 mt-lg-5 ">
                             <div class="row">
                                 <h1 class="text-white fw-200">
                                     <span class="nowrap fw-200">Our Goal is to help </span>
@@ -25,8 +30,8 @@
                                 <span class="fw-200">as a ^ partner.</span>
                             </h1>
 
-                        </div>
-                        <div class="d-flex m-2 m-lg-5 ml-5">
+                        </div> -->
+                        <div class="d-flex  ml-5">
                             <button type="button" class="btn btn-primary">Enroll Now </button>
                         </div>
                         <!-- <button style="border-radius: 0;" class="btn btn-primary">Visit Here!</button> -->
@@ -36,10 +41,15 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="../assets/Poster 2.jpg" alt="Second slide">
+                <picture>
+                    <source style="filter: brightness(0.5);" media="(max-width: 686px)" srcset="../assets/poster2_phone.png">
+                    <img style="filter: brightness(0.5);" class="d-block w-100" src="../assets/poster2.png" alt="Second slide">
+                </picture>
+                <!-- <img class="d-block w-100" src="../assets/poster2.png" alt="Second slide"> -->
                 <div class=" slide-banner">
-                    <div class="m-1 m-md-4 slide-true">
-                        <h1 class="d-flex justify-content-center">
+                    <div class="m-1 slide-true">
+                        <img src="../../../assets/slide_banner3.png" width="100%">
+                        <!-- <h1 class="d-flex justify-content-center">
                             <span class="flag p-2 mx-4">FEATURED</span>
                         </h1>
 
@@ -51,7 +61,35 @@
                         </div>
                         <div class="d-flex m-1 m-lg-4 ml-4">
                             <button type="button" class="btn btn-primary">Enroll Now </button>
+                        </div> -->
+                        <!-- <button style="border-radius: 0;" class="btn btn-primary">Visit Here!</button> -->
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source style="filter: brightness(0.5);" media="(max-width: 686px)" srcset="../assets/poster3_phone.png">
+                    <img style="filter: brightness(0.5);" class="d-block w-100" src="../assets/poster3.png" alt="Third slide">
+                </picture>
+
+                <div class=" slide-banner">
+                    <div class="m-1 slide-true">
+                        <img src="../../../assets/slide_banner2.png" width="100%">
+                        <!-- <h1 class="d-flex justify-content-center">
+                            <span class="flag p-2 mx-4">FEATURED</span>
+                        </h1>
+
+                        <div class="row mt-4">
+                            <h3 class="text-white ml-4">
+                                <p class="nowrap fw-200">Coding for Kids </p>
+                                <span class="nowrap fw-200"> Make your kids Code Masters this Vacation!</span>
+                            </h3>
                         </div>
+                        <div class="d-flex m-1 m-lg-4 ml-4">
+                            <button type="button" class="btn btn-primary">Enroll Now </button>
+                        </div> -->
                         <!-- <button style="border-radius: 0;" class="btn btn-primary">Visit Here!</button> -->
                     </div>
 
@@ -73,4 +111,5 @@
         </div>
     </div>
     <app-testimonial-slide></app-testimonial-slide>
+
 </div>
