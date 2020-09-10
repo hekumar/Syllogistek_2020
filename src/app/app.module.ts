@@ -22,7 +22,8 @@ import { SharedModule} from '../app/shared/shared.module';
 import { AboutComponent } from './components/about/about.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ServicesPanneComponent } from './components/services-panne/services-panne.component';
-import { ReadMoreComponent } from './components/read-more/read-more.component'
+import { ReadMoreComponent } from './components/read-more/read-more.component';
+import { EnrollFormComponent } from './components/enroll-form/enroll-form.component'
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ReadMoreComponent } from './components/read-more/read-more.component'
     AboutComponent,
     GalleryComponent,
     ServicesPanneComponent,
-    ReadMoreComponent
+    ReadMoreComponent,
+    EnrollFormComponent
   ],
   imports: [
     BrowserModule,
