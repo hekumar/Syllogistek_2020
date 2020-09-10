@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 .testimonial.active {
     animation: fadeIn ease-in-out 250ms;
     -webkit-animation: fadeIn ease-in-out 250ms;
@@ -28,18 +29,30 @@
     border-top: 1px solid #cddef7;
 }
 
+.enroll-btn {
+    top: 48%;
+    position: absolute;
+    left: 45.55%;
+}
+
 // @keyframes active {
 // 0% {display: none;}
 // 100% {display:block;}
 // }
 @media screen and (max-width: 686px) {
+    .enroll-btn {
+        top: 60%;
+        position: absolute;
+        left: 50%;
+    }
     .slide-banner {
         width: 100% !important;
     }
     .explore_service_text {
-        font-size: 1.5rem;
+        font-size: 3vh;
     }
     .testimonial-banner {
+        height: 12rem;
         border-top-left-radius: 0rem !important;
         border-bottom-left-radius: 0rem !important;
     }
@@ -57,7 +70,7 @@
         }
     }
     .explore_service_text {
-        font-size: 1.5rem;
+        font-size: 2.885vh;
     }
     .testimonial-profile {
         width: 80px !important;
