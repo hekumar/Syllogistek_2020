@@ -27,7 +27,7 @@ export class GalleryComponent implements OnInit {
 
   ngOnInit(): void {
     this.screenViewHandler(window.innerWidth, window.outerWidth);
-    for (let index = 0; index < 21; index++) {
+    for (let index = 0; index < 20; index++) {
      this.gallery.push(String(index + 1))
       }
   }

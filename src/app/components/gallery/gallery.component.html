@@ -47,7 +47,7 @@
                 <div class="carousel-inner">
 
                     <div *ngFor="let g of gallery let i = index" class="carousel-item" [ngClass]="{'active': i==0 }">
-                        <div class="d-flex justify-content-center">
+                        <div style="height: 90vh;" class="d-flex justify-content-center align-items-center">
                             <img class="img-thumbnail gallery_img_w" alt="gallery image" src="../../../assets/gallery/{{g}}.jpg">
                         </div>
                     </div>

@@ -1,13 +1,8 @@
 export let carousalData1 = [
     [{
-        courseName: "Graphic Design using Corel Draw",
+        courseName: "Graphic Design",
         course_img: "starters/Graphic_Design_using_Coreldraw.png",
         instructor: "Parijat Roy", class: "IV - VII", tag: ""
-    },
-    {
-        courseName: "Advanced Graphic Design",
-        course_img: "starters/Advance_Graphic_Design.png",
-        instructor: "Parijat Roy", class: "VIII - XII", tag: "New"
     },
     {
         courseName: "Fun with Python",
@@ -15,9 +10,9 @@ export let carousalData1 = [
         instructor: "Parijat Roy", class: "VI - VIII", tag: "Popular"
     },
     {
-        courseName: "Python for Beginners",
-        course_img: "starters/Python_for_beginners.png",
-        instructor: "Parijat Roy", class: "IX - XII", tag: ""
+        courseName: "Web development",
+        course_img: "starters/Basic_Web_Development.png",
+        instructor: "Parijat Roy", class: "VI - VIII", tag: ""
     },
     {
         courseName: "JAVA programming",
@@ -25,9 +20,9 @@ export let carousalData1 = [
         instructor: "Parijat Roy", class: "VIII - XII", tag: ""
     },
     {
-        courseName: "Web development",
-        course_img: "starters/Basic_Web_Development.png",
-        instructor: "Parijat Roy", class: "VI - VIII", tag: ""
+        courseName: "Python for Beginners",
+        course_img: "starters/Python_for_beginners.png",
+        instructor: "Parijat Roy", class: "IX - XII", tag: ""
     },
     {
         courseName: "Advance web development with Animation",
@@ -35,6 +30,11 @@ export let carousalData1 = [
         instructor: "Parijat Roy", class: "IX - XII", tag: "New"
     },
     {
+        courseName: "Advanced Graphic Design",
+        course_img: "starters/Advance_Graphic_Design.png",
+        instructor: "Parijat Roy", class: "VIII - XII", tag: "New"
+    },
+     {
         courseName: "Entrepreneurship for kids",
         course_img: "starters/Entrepreneurship_Skill.png",
         instructor: "Parijat Roy", class: "IV - VII", tag: ""
@@ -43,18 +43,8 @@ export let carousalData1 = [
     
     [
         {
-            courseName: "Full Stack PHP",
-            course_img: "collegegoers/fullstackphp.png",
-            instructor: "Parijat Roy", duration: "40 Hr", tag: ""
-        },
-        {
             courseName: "Python for Beginners",
             course_img: "collegegoers/python4b.png",
-            instructor: "Parijat Roy", duration: "100 Hr with Live Project", tag: ""
-        },
-        {
-            courseName: "MEAN Stack Programming",
-            course_img: "collegegoers/meanstack.png",
             instructor: "Parijat Roy", duration: "100 Hr with Live Project", tag: ""
         },
         {
@@ -62,6 +52,19 @@ export let carousalData1 = [
             course_img: "collegegoers/dsbypython.png",
             instructor: "Parijat Roy", duration: "100 Hr with Live Project", tag: "Popular"
         },
+        {
+            courseName: "MEAN Stack Programming",
+            course_img: "collegegoers/meanstack.png",
+            instructor: "Parijat Roy", duration: "100 Hr with Live Project", tag: ""
+        },
+        {
+            courseName: "Full Stack PHP",
+            course_img: "collegegoers/fullstackphp.png",
+            instructor: "Parijat Roy", duration: "40 Hr", tag: ""
+        },
+       
+        
+       
         {
             courseName: "Competitive coding",
             course_img: "collegegoers/competitivecoding.png",
@@ -80,24 +83,9 @@ export let carousalData1 = [
     ],
     [
         {
-            courseName: "Python",
-            course_img: "technocrats/Python.png",
-            instructor: "Parijat Roy", duration: "40 Hr", tag: "Popular"
-        },
-        {
-            courseName: "DataScience",
-            course_img: "technocrats/Datascience.png",
-            instructor: "Parijat Roy", duration: "40 Hr", tag: "Popular"
-        },
-        {
-            courseName: "JAVA with WebServices",
-            course_img: "technocrats/Java_with_web_services.png",
-            instructor: "Parijat Roy", duration: "50 Hr", tag: "New"
-        },
-        {
-            courseName: "JAVA",
-            course_img: "technocrats/Java_Programming.png",
-            instructor: "Parijat Roy", duration: "30 Hr", tag: ""
+            courseName: "AWS",
+            course_img: "technocrats/AWS.png",
+            instructor: "Parijat Roy", duration: "40 Hr", tag: ""
         },
         {
             courseName: "AZURE",
@@ -105,24 +93,30 @@ export let carousalData1 = [
             instructor: "Parijat Roy", duration: "20 Hr", tag: ""
         },
         {
-            courseName: "AWS",
-            course_img: "technocrats/AWS.png",
-            instructor: "Parijat Roy", duration: "40 Hr", tag: ""
-        },
-        {
             courseName: "Cyber Security",
             course_img: "technocrats/Cybersecurity.png",
             instructor: "Parijat Roy", duration: "60 Hr", tag: ""
         },
         {
-            courseName: "Power BI",
-            course_img: "technocrats/Power_BI.png",
-            instructor: "Parijat Roy", duration: "20 Hr", tag: ""
+            courseName: "DataScience",
+            course_img: "technocrats/Datascience.png",
+            instructor: "Parijat Roy", duration: "40 Hr", tag: "Popular"
         },
         {
-            courseName: ".Net",
-            course_img: "technocrats/.net.png",
+            courseName: "Full Stack PHP",
+            course_img: "technocrats/Full_Stack_PHP.png",
+            instructor: "Parijat Roy", duration: "40 Hr", tag: ""
+        },
+        {
+            courseName: "JAVA",
+            course_img: "technocrats/Java_Programming.png",
             instructor: "Parijat Roy", duration: "30 Hr", tag: ""
+        },
+       
+        {
+            courseName: "JAVA with WebServices",
+            course_img: "technocrats/Java_with_web_services.png",
+            instructor: "Parijat Roy", duration: "50 Hr", tag: "New"
         },
         {
             courseName: "MEAN Stack",
@@ -135,10 +129,26 @@ export let carousalData1 = [
             instructor: "Parijat Roy", duration: "40 Hr", tag: "New"
         },
         {
-            courseName: "Full Stack PHP",
-            course_img: "technocrats/Full_Stack_PHP.png",
-            instructor: "Parijat Roy", duration: "40 Hr", tag: ""
+            courseName: ".Net",
+            course_img: "technocrats/net.png",
+            instructor: "Parijat Roy", duration: "30 Hr", tag: ""
+        },
+      
+       
+        {
+            courseName: "Python",
+            course_img: "technocrats/Python.png",
+            instructor: "Parijat Roy", duration: "40 Hr", tag: "Popular"
+        },
+        
+        {
+            courseName: "Power BI",
+            course_img: "technocrats/Power_BI.png",
+            instructor: "Parijat Roy", duration: "20 Hr", tag: ""
         }
+        
+       
+       
     ]
 ];
 
