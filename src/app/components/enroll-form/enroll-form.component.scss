@@ -1,5 +1,13 @@
-input {
+input:not([type="file"]) {
     border-radius: 2rem;
     padding-left: 1rem;
     background-color: rgba(211, 211, 211, 0.473);
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+input[type="file"]::before {
+    content: 'Attach Resume   ';
 }

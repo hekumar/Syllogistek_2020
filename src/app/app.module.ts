@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/component/header/header.component';
@@ -23,7 +23,9 @@ import { AboutComponent } from './components/about/about.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ServicesPanneComponent } from './components/services-panne/services-panne.component';
 import { ReadMoreComponent } from './components/read-more/read-more.component';
-import { EnrollFormComponent } from './components/enroll-form/enroll-form.component'
+import { EnrollFormComponent } from './components/enroll-form/enroll-form.component';
+import { CourseDetailsComponent } from './components/course-details/course-details.component';
+import { EnterpriseServicesComponent } from './components/enterprise-services/enterprise-services.component'
 
 @NgModule({
   declarations: [
@@ -46,12 +48,15 @@ import { EnrollFormComponent } from './components/enroll-form/enroll-form.compon
     GalleryComponent,
     ServicesPanneComponent,
     ReadMoreComponent,
-    EnrollFormComponent
+    EnrollFormComponent,
+    CourseDetailsComponent,
+    EnterpriseServicesComponent
   ],
   imports: [
     BrowserModule,
     SharedModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule
   ],
   providers: [],

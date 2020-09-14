@@ -1,4 +1,4 @@
-<div style="background-color: #fff;">
+<div style="background-color: #fff;box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);">
     <div class="service_card_text ">
         <h6>{{title}}</h6>
     </div>
@@ -6,7 +6,7 @@
         <app-collapsable-list [id]=id [pane]="pane" [data]="data"></app-collapsable-list>
     </div>
 
-    <div *ngIf="!isSmallScreen" style="box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2); 
+    <div *ngIf="!isSmallScreen" style=" 
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -22,7 +22,7 @@
 
                     <div *ngFor="let items of selectedView; let i = index" class="carousel-item" [ngClass]="{'active': i==0 }">
                         <div class="d-flex">
-                            <a [@list1]="i" class="course-card" *ngFor="let item of items">
+                            <a style="cursor: pointer;" [@list1]="i" class="course-card" *ngFor="let item of items" (click)="openCourseModal(item)">
                                 <div class="course_card_header">
                                     <div class="course_card_header-prefix">
                                         <img class="course_card_header" style="width: 100%" src="../../../assets/{{item.course_img}}">
@@ -70,4 +70,8 @@
             </div>
         </div>
     </div>
+    <header class="w-100" style="background-color: #9fd5a899;">
+        <h6 class="text-center p-4">please <a href="http://www.syllogistek.com/support/">click here</a> to open Learning Management System
+        </h6>
+    </header>
 </div>

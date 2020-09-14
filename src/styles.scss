@@ -129,6 +129,17 @@
     }
 }
 
+.card-conainer {
+    width: auto;
+    margin: 1rem;
+}
+
+@media screen and (min-width: 626px) {
+    .card-conainer {
+        width: 16rem;
+    }
+}
+
 @media screen and (max-width: 780px) {
     .service_card_text h6 {
         position: relative !important;

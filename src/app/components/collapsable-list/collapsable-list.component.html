@@ -11,7 +11,7 @@
                     <div class="carousel-inner">
                         <div *ngFor="let item of data[i]; let j = index" class="carousel-item" [ngClass]="{'active': j==0 }">
                             <div class="d-flex justify-content-center">
-                                <a class="course-card">
+                                <a class="course-card" (click)="openCourseModal(item)">
                                     <div class="course_card_header">
                                         <div class="course_card_header-prefix">
                                             <img class="course_card_header" style="width: 100%" src="../../../assets/{{item.course_img}}">

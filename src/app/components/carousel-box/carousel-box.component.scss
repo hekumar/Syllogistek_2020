@@ -147,3 +147,7 @@ a.course-card {
     // opacity: 0.5;
     transition: opacity 0.15s ease;
 }
+
+a.course-card:hover {
+    background-color: lightgray;
+}

@@ -14,17 +14,14 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(process.cwd(), "/dist/syllogistekweb/index.html"));
 });
 
-app.post("api/html", (req, res) => {
-    res.writeHead(200, { "Content-Type": "text/html" });
-    console.log("api/html");
-    res.end(JSON.stringify({ "fulfillmentText": "Hello Hemant!" }));
+
+app.post("api/courses/assets", (req, res) => {
+    const file = `./assets/{req.query.document}.pdf`
+    res.setHeader("Content-Type", "application/pdf");
+    res.download(file);
 });
 
-app.post('/hi', (req, res) => {
-    res.writeHead(200, { "Content-Type": "text/html" });
-    console.log("req");
-    res.end(JSON.stringify({ "fulfillmentText": "Hello Hemant!" }));
-});
+
 var port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log("Server running at http://localhost:%d", port);

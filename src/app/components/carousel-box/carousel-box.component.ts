@@ -2,6 +2,8 @@ import { Component, OnInit, Input, HostListener } from '@angular/core';
 import * as _ from 'lodash';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { BreakpointService } from '../../services/breakpoint.service';
+import { CourseDetailsComponent } from '../course-details/course-details.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 export enum SCREEN_SIZE {
   XS,
@@ -77,12 +79,17 @@ export class CarouselBoxComponent implements OnInit {
 
   selectedView = [];
 
-  constructor(private breakpointService: BreakpointService) { }
+  constructor(private breakpointService: BreakpointService, private modalService: NgbModal) { }
 
   selectedContent(e) {
     this.selectedView = _.chunk(this.data[e], this.showItemPerPage);
   }
 
+  openCourseModal(item) {
+   
+      const modalRef = this.modalService.open(CourseDetailsComponent, { size: 'xl', backdrop: "static" });
+      modalRef.componentInstance.item = item;
+  }
 
   ngOnInit(): void {
 

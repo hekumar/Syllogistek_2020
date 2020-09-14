@@ -1,6 +1,8 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { trigger, transition, state, animate, style } from '@angular/animations';
 import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { EnrollFormComponent } from 'src/app/components/enroll-form/enroll-form.component';
 
 @Component({
   selector: 'app-header',
@@ -26,7 +28,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   popover = false;
   viewSideBar: boolean = false;
-  constructor(private router: Router) { }
+  constructor(private router: Router, private modalService: NgbModal) { }
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
     // console.log(window.pageYOffset);
@@ -60,6 +62,11 @@ export class HeaderComponent implements OnInit {
         behavior: 'smooth'
       })
     })
+  }
+
+  openmodel() {
+    const modalRef = this.modalService.open(EnrollFormComponent, { size: 'xl', backdrop: "static" });
+    // modalRef.componentInstance.person = p;
   }
   
   scrollToPos(e) {

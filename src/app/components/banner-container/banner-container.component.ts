@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { EnrollFormComponent } from '../enroll-form/enroll-form.component';
 
 @Component({
   selector: 'app-banner-container',
@@ -11,5 +13,7 @@ export class BannerContainerComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+ 
 
 }

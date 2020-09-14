@@ -1,0 +1,43 @@
+<div class="modal-header">
+    <div class="d-flex flex-column flex-sm-row">
+        <div class="modal-title">
+            <h4> Learning Services</h4>
+        </div>
+        <!-- <div>
+            <img [src]="person.photo" alt="..." class="team-img-2 img-responsive" width="180px" />
+        </div> -->
+
+    </div>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+    <div class="d-flex flex-column flex-md-row">
+        <div>
+            <img class="course_card_header" width="100%" style="max-width:80rem" src="../../../assets/{{item.course_img}}">
+            <div class="text-right mt-2" style="border-right: 1px solid rgb(87, 219, 87);">
+                <p class="px-2"><span style="color: rgb(67, 100, 161);">Duration :</span><br> {{item?.duration}}</p>
+                <p class="px-2"><span style="color: rgb(67, 100, 161);">Course Content :</span> <br><a class="btn-link" style="cursor: pointer;" (click)="getCourseContent(item.courseName)"> {{item?.courseName}} course content</a></p>
+            </div>
+        </div>
+        <div class="px-4">
+
+            <h3 style="color: rgb(67, 100, 161);">{{item.courseName}}</h3>
+
+            <p class="text-justify" *ngFor="let p of item.description; let i = index;">
+                {{p}}
+            </p>
+            <a href="https://forms.gle/kMjU8sfHqdLxqaHy6" class="btn btn-success float-right float-md-left">Enroll Now</a>
+        </div>
+
+
+
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">
+    Close
+  </button>
+</div>
