@@ -11,3 +11,27 @@ input[type="file"]::-webkit-file-upload-button {
 input[type="file"]::before {
     content: 'Attach Resume   ';
 }
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input.ng-invalid {
+    border: 2px solid rgb(230, 30, 30);
+}
+
+input.ng-pristine {
+    border: none;
+}
+
+.ng-valid[required],
+.ng-valid.required {
+    border-left: 5px solid #42A948;
+    /* green */
+}
+
+input.ng-touched.ng-invalid,
+textarea.ng-touched.ng-invalid,
+.wrong {
+    border: 2px solid rgb(230, 30, 30);
+}

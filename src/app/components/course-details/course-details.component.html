@@ -19,7 +19,7 @@
             <img class="course_card_header" width="100%" style="max-width:80rem" src="../../../assets/{{item.course_img}}">
             <div class="text-right mt-2" style="border-right: 1px solid rgb(87, 219, 87);">
                 <p class="px-2"><span style="color: rgb(67, 100, 161);">Duration :</span><br> {{item?.duration}}</p>
-                <p class="px-2"><span style="color: rgb(67, 100, 161);">Course Content :</span> <br><a class="btn-link" style="cursor: pointer;" (click)="getCourseContent(item.courseName)"> {{item?.courseName}} course content</a></p>
+                <p class="px-2"><span style="color: rgb(67, 100, 161);">Course Content :</span> <br><a class="btn-link" style="cursor: pointer;" (click)="getCourseContent(item.course_content)"> {{item?.courseName}} course content</a></p>
             </div>
         </div>
         <div class="px-4">

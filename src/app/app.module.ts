@@ -26,6 +26,7 @@ import { ReadMoreComponent } from './components/read-more/read-more.component';
 import { EnrollFormComponent } from './components/enroll-form/enroll-form.component';
 import { CourseDetailsComponent } from './components/course-details/course-details.component';
 import { EnterpriseServicesComponent } from './components/enterprise-services/enterprise-services.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,8 @@ import { EnterpriseServicesComponent } from './components/enterprise-services/en
   imports: [
     BrowserModule,
     SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule

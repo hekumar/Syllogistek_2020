@@ -9,12 +9,10 @@ export class CourseService {
   constructor(private http: HttpClient) { }
 
   getDocument(doc) {
-const httpOption =  {
-  responseType: 'blob' as 'json'
-}
 
 const param = new HttpParams().set('document', doc );
 
-   return this.http.get('api/courses/assets', Object.assign(param, httpOption));
+
+   return this.http.get('api/courses/assets', {params : param ,responseType :  'blob' as 'json'} );
   }
 }
