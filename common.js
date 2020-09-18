@@ -10,5 +10,6 @@ const Promise = require('bluebird');
 global.Promise = Promise;
 
 // Load configuration from `{root}/.env`
+console.log(path.resolve(process.cwd(), '../.env'));
 
-dotenv.config(); // loads `.env` and does not overwrite existing values (`.env` takes priority)
+dotenv.config({ path: path.resolve(process.cwd(), '.env') }); // loads `.env` and does not overwrite existing values (`.env` takes priority)

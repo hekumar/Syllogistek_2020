@@ -10,6 +10,13 @@
     -ms-animation: fadeIn ease-in-out 250ms;
 }
 
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 100%;
+        margin: 1.75rem 1.75rem;
+    }
+}
+
 .bg-lightBlue {
     background-color: #f3f8ff;
 }

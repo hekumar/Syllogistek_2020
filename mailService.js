@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 console.log(process.env.MAILID);
 exports.contact = function(req, res) {
-    var name = req.body.body.name;
+    var name = req.body.name;
     var message = JSON.stringify(req.body);
     var to = process.env.MAILTO;
     var smtpTransport = nodemailer.createTransport({

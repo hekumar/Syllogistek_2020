@@ -159,73 +159,96 @@ export let carousalData1 = [
             courseName: "AWS",
             course_img: "technocrats/AWS.jpg",
             instructor: "Parijat Roy", duration: "40 Hour", tag: "",
-            description: ["To be added Later"],
+            description: ["Amazon Web Services (AWS) is a secure cloud services platform, offering various functionalities like database storage, content delivery and compute power to help businesses scale and grow. It is Cost effective, flexible, reliable, secure, scalable and easy to use. Instagram, Vine, Netflix, AirBnB, Apple are just few of the names that use AWS in large parts of their business. Used by an assortment of companies and government agencies, AWS has gone from strength to strength.",
+            "Our expert trainers assist you to ensure you are well prepared to clear the AWS Cloud Practitioner and Associate AWS Solutions Architect certifications. This course is ideal for professionals who want to pursue a career in Cloud computing or develop Cloud applications with AWS. The following roles will benefit from this learning path:",
+            "•  Product Managers",
+            "•  System Adminstrators and IT Managers",
+            "•  IT Adminstrators and Operators",
+            "•  IT Engineers",
+            "•  Cloud Engineers",
+            "•  Software Developers and Software Architects",
+            
+        ],
 
-            course_content: ""
+            course_content: "AWS-course-content"
         },
         {
             courseName: "AZURE",
             course_img: "technocrats/Azure_Course.jpg",
             instructor: "Parijat Roy", duration: "20 Hour", tag: "",
-            course_content: "",
-            description: ["To be added Later"],
+            course_content: "Azure-Course-Content",
+            description: ["The Azure™ Services Platform (Azure) is an internet-scale cloud services platform hosted in Microsoft data centers, which provides an operating system and a set of developer services that can be used individually or together. Azure’s flexible and interoperable platform can be used to build new applications to run from the cloud or enhance existing applications with cloud-based capabilities. Its open architecture gives developers the choice to build web applications, applications running on connected devices, PCs, servers, or hybrid solutions offering the best of online and on-premises.",
+        ]
         },
         {
             courseName: "Cyber Security",
             course_img: "technocrats/Cybersecurity.jpg",
-            instructor: "Parijat Roy", duration: "60 Hour", tag: "",
-            course_content: "",
-            description: ["To be added Later"],
+            instructor: "Parijat Roy", duration: "40 Hour", tag: "",
+            course_content: "Cyber-Security-technocrat-Course-Content",
+            description: ["This course is designed to train basic to advanced level of real-time Ethical Hacking concepts and hands-on updated Ethical Hacking Tools. A complete guide of Ethical Hacking course online is provided in a dedicated learning management system. This will enable students to Build Career as an Information Security Professional. Multiple online lab-based assignments are done.",
+        ],
         },
         {
             courseName: "DataScience",
             course_img: "technocrats/Datascience.jpg",
             instructor: "Parijat Roy", duration: "40 Hour", tag: "Popular",
-            course_content: "",
-            description: ["To be added Later"],
+            course_content: "Data-Science-technocrat-Course-Content",
+            description: ["Information is the new gold – and mining data – that is the art of understanding the patterns in data and behavior is the new requirement in all data-driven businesses. Data science provides the background for understanding how users behave, how different decision impact acquisition, engagement and retention of users. Machine learning, on the other hand, makes self-learning machines which can ingest continuous pipelines of user data and find patterns, thereby predicting the future with a significant confidence. In this course, we will understand data as a science as well as look at case studies involving real world data to understand how machine learning models can be created. We will go in depth in predictive modelling, sentiment analysis, user clustering, deep learning and various other topics which are invariably important to understand machine learning, in parallel creating a strong background for data science. The course will have a theory section, backed up by live demo/Lab in Python or R.",
+        "Prerequisites for this course are Basic understanding of statistics and Basics of Python or any other Object Oriented programming language"],
         },
         {
             courseName: "Full Stack PHP",
             course_img: "technocrats/Full_Stack_PHP.jpg",
             instructor: "Parijat Roy", duration: "40 Hour", tag: "",
-            course_content: "",
-            description: ["To be added Later"],
+            course_content: "PHP-Course-Content",
+            description: ["PHP & MySQL with MVC framework, will introduce attendees to PHP, MySQL and CakePHP MVC framework. The course will cover aspects of how to use PHP, MySQL along with CakePHP, MVC framework to create powerful and easy to maintain database driven websites.",
+            
+            "The course will also cover Installation & Configuration of PHP, MySQL and CakePHP.",
+            
+            "After the completion of the ‘PHP & MySQL with MVC Framework’ Course, students will become proficient PHP/MySQL web developer using MVC architecture.​"
+        ],
         },
         {
             courseName: "JAVA",
             course_img: "technocrats/Java_Programming.jpg",
             instructor: "Parijat Roy", duration: "30 Hour", tag: "",
-            course_content: "",
-            description: ["To be added Later"],
+            course_content: "JAVA-Course-Content",
+            description: ["The most popular and ubiquitous computer programming language in the world today. Java is Object Oriented, platform independent, simple, secure, architectural-neutral, portable, robust, multi threaded, high performance, distributed and dynamic. It can be used to develop software and also applets. A Java program can run on various operating systems without rewriting the code. And this is possible because of Java-runtime environment which tells the operating system what to do by interpreting the Java code.",
+        ],
         },
 
         {
             courseName: "JAVA with WebServices",
             course_img: "technocrats/Java_with_web_services.jpg",
             instructor: "Parijat Roy", duration: "50 Hour", tag: "New",
-            course_content: "",
-            description: ["To be added Later"],
+            course_content: "Java-Webservices-Course-Contents",
+            description: ["JAVA with Web Services course is designed for beginners and professionals providing basic and advanced concepts of web services such as protocols, SOAP, RESTful, java web service implementation, JAX-WS and JAX-RS tutorials and examples.",
+            "Web service is a technology to communicate one programming language with another. For example, java programming language can interact with PHP and .Net by using web services. In other words, web service provides a way to achieve interoperability.",
+            ],
         },
         {
             courseName: "MEAN Stack",
             course_img: "technocrats/MEAN_Stack_Programming.jpg",
             instructor: "Parijat Roy", duration: "40 Hour", tag: "",
-            course_content: "",
-            description: ["To be added Later"],
+            course_content: "MEAN-Stack-technocrat-Course-Content",
+            description: ["The course was designed for students to provide them exposure on full stack programming using MongoDb, Express .js, Angular and Node .js. As part of this, an end to end project to build a Personal Blog by each student, where they developed front end, middleware and backend. With this course students got a complete idea of what is full stack web development. Based on this, they can choose web development as their career.",
+
+            "Pre-requisites for this course: Good understanding of computer programming concept",],
         },
         {
             courseName: "MERN Stack",
             course_img: "technocrats/MERN_Stack_Programming.jpg",
             instructor: "Parijat Roy", duration: "40 Hour", tag: "New",
             course_content: "",
-            description: ["To be added Later"],
+            description: ["Coming Soon..."],
         },
         {
             courseName: ".Net",
             course_img: "technocrats/net.jpg",
             instructor: "Parijat Roy", duration: "30 Hour", tag: "",
-            course_content: "",
-            description: ["To be added Later"],
+            course_content: "DOTNET-Course-Content",
+            description: ["Our .NET course is a comprehensive introduction to the .NET space and .NET coding using C#. This course lays the foundation for the major aspects of .NET development, including the Visual Studio Environment, data connections, the C# language, and WinForms and WebForms projects.",
+        ],
         },
 
 
@@ -233,16 +256,21 @@ export let carousalData1 = [
             courseName: "Python",
             course_img: "technocrats/python.jpg",
             instructor: "Parijat Roy", duration: "40 Hour", tag: "Popular",
-            course_content: "",
-            description: ["To be added Later"],
+            course_content: "Python-Course-Content",
+            description: ["Python is a general purpose multi-paradigm programming language that is used by thousands of people to do things from testing microchips to powering Instagram, to build video games. It closely resembles the English language and has hundreds of powerful libraries. It is a great choice for beginners and experts alike. It can be used for",
+            "•  App Development",
+            "•  Web Development",
+            "•  Backend Devlopment",
+            ],
         },
 
         {
             courseName: "Power BI",
             course_img: "technocrats/Power_BI.jpg",
             instructor: "Parijat Roy", duration: "20 Hour", tag: "",
-            course_content: "",
-            description: ["To be added Later"],
+            course_content: "PowerBI-Course-Content",
+            description: ["Microsoft Power BI Training will help you achieve expertise in business analytics. Build a strong knowledge-based career in the Power BI platform. Our Power BI training program will help you to master knowledge of the concepts such us modeling, visualizations, exploring data with dashboards, DAX functionality and many more. At the end of this course, you will master the concepts like Power BI Desktop, Power BI DAX, Power BI Q&A, Power BI Content packs, Power BI Custom Visuals, Power BI Integrations with Azure Machine Learning and SQL Services.",
+        ],
         }
 
 
