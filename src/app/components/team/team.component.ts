@@ -113,6 +113,15 @@ export class TeamComponent implements OnInit {
                     }
                    ]
     },
+    {
+      "name" : "Srikanth",
+      "position" : "IT Adviser",
+      "description" : "12+ years experienced Engineer with a demonstrated history of working in the semiconductors industry specializing in DevOps.",
+      "photo" : "../assets/people/Srikanth.png",
+      "details" : [{ "head" : "Competencies", "text" : [ "Build ~ Infrastruture ~ Devops~ Build and distribution ~ Automation and tool development ~ SCM ~ Dashboard development, data management and analytics ~ Metric tracking ~ Optimization",
+                                                         "It’s Srikanth’s mission to maximize software developers potential by removing the need for them to waste time and energy on build and process issues. His expertise is to ensure code is built, tested, packaged and delivered to the customer smoothly and ASAP."]
+                  }]
+  },
     
     {
       "name": "Sumit Misra",
