@@ -14,7 +14,7 @@ export class BodyComponent implements OnInit {
   }
   
   pane1Items = ["Learning Services", "Enterprise Services"];
-  subPane1 = ["Starters", "College Goers", "Technocrats"];
+  subPane1 = ["School Students", "Under Graduates", "Technocrats"];
   subPane2 = ["App development and maintenance", "Digital Marketing"];
   selectedSubPane = this.subPane1;
 

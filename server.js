@@ -34,13 +34,7 @@ app.get("/api/courses/assets", (req, res) => {
     res.download(file);
 });
 
-// .well-known/pki-validation/35F1696C8122E046039678F2D38CE27D.txt
 
-app.get("/.well-known/pki-validation/35F1696C8122E046039678F2D38CE27D.txt", (req, res) => {
-    const file = `./assets/35F1696C8122E046039678F2D38CE27D.txt`
-        // res.setHeader("Content-Type", "application/pdf");
-    res.download(file);
-});
 app.post("/api/contact", mailer.contact);
 
 
