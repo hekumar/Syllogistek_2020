@@ -65,7 +65,7 @@ export class HeaderComponent implements OnInit {
   }
 
   openmodel() {
-    const modalRef = this.modalService.open(EnrollFormComponent, { size: 'xl', backdrop: "static" });
+    const modalRef = this.modalService.open(EnrollFormComponent, { size: 'lg', backdrop: "static" });
     // modalRef.componentInstance.person = p;
   }
   

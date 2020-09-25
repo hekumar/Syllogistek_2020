@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 .testimonial.active {
     animation: fadeIn ease-in-out 250ms;
     -webkit-animation: fadeIn ease-in-out 250ms;
@@ -10,13 +9,12 @@
     -ms-animation: fadeIn ease-in-out 250ms;
 }
 
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 100%;
-        margin: 1.75rem 1.75rem;
-    }
-}
-
+// @media (min-width: 576px) {
+//     .modal-dialog {
+//         max-width: 100%;
+//         margin: 1.75rem 1.75rem;
+//     }
+// }
 .bg-lightBlue {
     background-color: #f3f8ff;
 }
