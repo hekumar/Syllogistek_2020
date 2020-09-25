@@ -7,8 +7,8 @@ const bodyParser = require("body-parser");
 // mailer.contact({ body: { fName: "HKKKKK", sd: "sdsdsds" } }, { send: function(x = "sd") { console.log(x); } })
 const app = express();
 
-// app.use(helmet());
-// app.use(helmet.frameguard())
+app.use(helmet());
+app.use(helmet.frameguard())
 
 // app.use(helmet.contentSecurityPolicy({
 //         directives: {
