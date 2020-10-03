@@ -1,8 +1,13 @@
-<div style="height: 86px;">
-    <app-header>
-    </app-header>
+<div class="modal-header">
+    <h4>Who we are?</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>
-<main class="bg-lightBlue" role="main">
+
+<div class="modal-body bg-lightBlue">
+   
+<main class="" role="main">
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
@@ -10,8 +15,8 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-12">
-                <h2>Who we are?</h2>
+            <div class="col-md-12 my-4">
+              
                 <h4 class="font_4" style="font-size: 30px; text-align: justify;"><span style="font-size: 30px;"><span ><span s>The Genesis</span></span>
                     </span>
                 </h4>
@@ -46,6 +51,14 @@
         </div>
     </div>
 </main>
-<div class="bg-lightBlue border_f_top">
-    <app-footer></app-footer>
 </div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">
+    Close
+  </button>
+</div>
+
+<!-- <div class="bg-lightBlue border_f_top">
+    <app-footer></app-footer>
+</div> -->

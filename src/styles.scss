@@ -37,7 +37,8 @@
 .enroll-btn {
     top: 48%;
     position: absolute;
-    left: 45.55%;
+   width: 100%;
+   
 }
 
 // @keyframes active {
@@ -46,9 +47,10 @@
 // }
 @media screen and (max-width: 686px) {
     .enroll-btn {
-        top: 60%;
+        top: 67%;
         position: absolute;
-        left: 50%;
+       
+        // left: 50%;
     }
     .slide-banner {
         width: 100% !important;
@@ -167,6 +169,7 @@
         top: -3rem !important;
     }
     .testimonial-profile {
+        margin-top: 0.5rem;
         width: 80px;
         height: 80px;
     }
@@ -349,12 +352,28 @@
     }
     .contain,
     .contain--small {
-        max-width: 78.75rem;
+        max-width: 70rem;
         margin-left: auto;
         margin-right: auto;
         padding: 1rem .75rem;
     }
 }
+
+// @media screen and (min-width: 40rem) {
+//     .contain,
+//     .contain--small {
+//         padding-left: 15.84px;
+//         padding-right: 15.84px;
+//     }
+//     .contain,
+//     .contain--small {
+//         max-width: 77.75rem;
+//         margin-left: auto;
+//         margin-right: auto;
+//         padding: 1rem .75rem;
+//     }
+// }
+
 
 //  Container for Body END
 .btn-primary {

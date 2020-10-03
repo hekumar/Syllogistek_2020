@@ -10,7 +10,7 @@ $cube_bg_color: #fff;
     transform-style: preserve-3d
 }
 
-@media(max-width:992px) {
+@media(max-width:1360px) {
     .cubeFaces {
         width: 200px
     }
@@ -19,13 +19,15 @@ $cube_bg_color: #fff;
 .cubeFace {
     outline: 1px solid #02203c;
     position: absolute;
-    width: 300px;
-    height: 300px;
+    // width: 300px;
+    // height: 300px;
+    width: 200px;
+    height: 200px;
     opacity: .9;
     box-shadow: inset 0 0 100px #02203c
 }
 
-@media(max-width:992px) {
+@media(max-width:1360px) {
     .cubeFace {
         width: 200px;
         height: 200px
@@ -33,70 +35,76 @@ $cube_bg_color: #fff;
 }
 
 .cubeFaceBack {
-    transform: translateZ(-150px) rotateY(180deg);
+    // transform: translateZ(-150px) rotateY(180deg);
+    transform: translateZ(-100px) rotateY(180deg);
     background-color: $cube_bg_color
 }
 
-@media(max-width:992px) {
+@media(max-width:1360px) {
     .cubeFaceBack {
         transform: translateZ(-100px) rotateY(180deg)
     }
 }
 
 .cubeFaceRight {
-    transform: rotateY(-270deg) translateX(150px);
+    // transform: rotateY(-270deg) translateX(150px);
+    transform: rotateY(-270deg) translateX(100px);
     transform-origin: top right;
     background-color: $cube_bg_color
 }
 
-@media(max-width:992px) {
+@media(max-width:1360px) {
     .cubeFaceRight {
         transform: rotateY(-270deg) translateX(100px)
     }
 }
 
 .cubeFaceLeft {
-    transform: rotateY(270deg) translateX(-150px);
+    // transform: rotateY(270deg) translateX(-150px);
+    transform: rotateY(270deg) translateX(-100px);
     transform-origin: center left;
     background-color: $cube_bg_color
 }
 
-@media(max-width:992px) {
+@media(max-width:1360px) {
     .cubeFaceLeft {
         transform: rotateY(270deg) translateX(-100px)
     }
 }
 
 .cubeFaceTop {
-    transform: rotateX(-90deg) translateY(-150px);
+    // transform: rotateX(-90deg) translateY(-150px);
+    transform: rotateX(-90deg) translateY(-100px);
     transform-origin: top center;
     background-color: #02203c
 }
 
-@media(max-width:992px) {
+@media(max-width:1360px) {
     .cubeFaceTop {
         transform: rotateX(-90deg) translateY(-100px)
     }
 }
 
 .cubeFaceBottom {
-    transform: rotateX(90deg) translateY(150px);
+    // transform: rotateX(90deg) translateY(150px);
+    transform: rotateX(90deg) translateY(100px);
     transform-origin: bottom center;
     background-color: #02203c
 }
 
-@media(max-width:992px) {
+@media(max-width:1360px) {
     .cubeFaceBottom {
         transform: rotateX(90deg) translateY(100px)
     }
 }
 
 .cubeFaceFront {
-    transform: translateZ(150px);
+    // transform: translateZ(150px);
+    transform: translateZ(100px);
     background-color: $cube_bg_color
 }
 
-@media(max-width:992px) {
+@media(max-width:1360px) {
     .cubeFaceFront {
         transform: translateZ(100px)
     }
@@ -139,7 +147,7 @@ $cube_bg_color: #fff;
     transform-style: preserve-3d
 }
 
-@media(max-width:992px) {
+@media(max-width:1360px) {
     .shadow {
         width: 200px
     }
@@ -147,16 +155,19 @@ $cube_bg_color: #fff;
 
 .shadow div {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    // width: 220px;
+    // height: 220px;
+    width: 200px;
+    height: 200px;
+    transform: rotateX(90deg) translateY(100px);
     top: 0;
     opacity: .98;
     box-shadow: 0 0 100px #000;
-    transform: rotateX(90deg) translateY(150px);
+    // transform: rotateX(90deg) translateY(150px);
     transform-origin: bottom center
 }
 
-@media(max-width:992px) {
+@media(max-width:1360px) {
     .shadow div {
         width: 200px;
         height: 200px;
@@ -299,7 +310,7 @@ $cube_bg_color: #fff;
     position: relative
 }
 
-@media(max-width:992px) {
+@media(max-width:1360px) {
     ._1DRH8pH22d-JIVE_kjwTTL {
         padding: 100px 20px
     }
@@ -319,13 +330,15 @@ $cube_bg_color: #fff;
 }
 
 .cube_outline {
-    flex: 1 1 50%;
+    // flex: 1 1 50%;
     display: flex;
+    // margin: 90px 0 0;
     margin: 90px 0 0;
+    flex: 0 0 250px;
     justify-content: center
 }
 
-@media(max-width:992px) {
+@media(max-width:1360px) {
     .cube_outline {
         margin: 90px 0 0;
         flex: 0 0 250px

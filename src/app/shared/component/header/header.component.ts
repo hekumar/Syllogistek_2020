@@ -3,6 +3,7 @@ import { trigger, transition, state, animate, style } from '@angular/animations'
 import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { EnrollFormComponent } from 'src/app/components/enroll-form/enroll-form.component';
+import { AboutComponent } from 'src/app/components/about/about.component';
 
 @Component({
   selector: 'app-header',
@@ -68,6 +69,11 @@ export class HeaderComponent implements OnInit {
     const modalRef = this.modalService.open(EnrollFormComponent, { size: 'lg', backdrop: "static" });
     // modalRef.componentInstance.person = p;
   }
+
+  openAboutModal() {
+    const modalRef = this.modalService.open(AboutComponent, { size: 'lg', backdrop: "static" });
+  }
+
   
   scrollToPos(e) {
     let element, topPos;
