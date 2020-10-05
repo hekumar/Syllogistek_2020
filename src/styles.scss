@@ -35,7 +35,7 @@
 }
 
 .enroll-btn {
-    top: 48%;
+    top: 47%;
     position: absolute;
    width: 100%;
    
@@ -47,10 +47,11 @@
 // }
 @media screen and (max-width: 686px) {
     .enroll-btn {
-        top: 67%;
+        top: 76%;
+    left: -29%;
         position: absolute;
        
-        // left: 50%;
+      
     }
     .slide-banner {
         width: 100% !important;
