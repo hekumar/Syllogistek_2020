@@ -3,7 +3,11 @@
     <li *ngFor="let item of pane; let i = index">
         <div>
             <div class="course_sm collapsed" data-toggle="collapse" aria-expanded="false" [attr.data-target]="'#'+id+i">
-                <h6 class="course_catagory_sm_title ">{{item}}</h6>
+                <h6 class="course_catagory_sm_title d-flex justify-content-between">
+                    <span>{{item}}</span>
+                     <!-- <span>
+                        <i style="color:rgb(2, 179, 228);" class="fa fa-plus-square" aria-hidden="true"></i></span> -->
+                    </h6>
             </div>
 
             <div id="{{ id+i}}" class="pt-2 collapse">

@@ -12,3 +12,13 @@
 .btn-white:focus {
     box-shadow: 2px -2px 5px 0px #4a47475e;
 }
+
+.ceo_img {
+    width: auto;
+}
+
+@media screen and (min-width: 992px) {
+    .ceo_img {
+        width: 500px;
+    }
+}

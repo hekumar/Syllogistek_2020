@@ -25,8 +25,15 @@
     position: relative;
 }
 
+.course_sm.collapsed h6::after {
+    font-family: 'FontAwesome';
+    content: "\f105";
+    font-weight: 700;
+    font-size: 1.6875rem;
+}
 .course_catagory_sm_title::after {
-    content: "+";
+    font-family: 'FontAwesome';
+    content: "\f107";
     color: rgb(2, 179, 228);
     display: block;
     position: absolute;

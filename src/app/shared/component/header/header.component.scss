@@ -17,6 +17,29 @@ $TextHoverColor: #1a80ceda;
     transform: translateY(-100%);
     animation: sticky-slide-down .4s ease .25s forwards;
 }
+.border-2 {
+    border-radius:8px; 
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.social-media-link {
+    
+    position: fixed; right: 0; z-index: 2;  
+}
+
+@media screen and (min-width: 768px) {
+    .social-media-link {
+         left: 0; 
+         right: unset;
+    }
+    .border-2 {
+        border-radius:8px; 
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
 
 @keyframes sticky-slide-down {
     100% {

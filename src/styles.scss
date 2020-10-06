@@ -1,12 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";
+
+
 .testimonial.active {
-    animation: fadeIn ease-in-out 250ms;
-    -webkit-animation: fadeIn ease-in-out 250ms;
-    -moz-animation: fadeIn ease-in-out 250ms;
-    -o-animation: fadeIn ease-in-out 250ms;
-    -ms-animation: fadeIn ease-in-out 250ms;
+    animation: fadeIn ease-in-out 500ms;
+    -webkit-animation: fadeIn ease-in-out 500ms;
+    -moz-animation: fadeIn ease-in-out 500ms;
+    -o-animation: fadeIn ease-in-out 500ms;
+    -ms-animation: fadeIn ease-in-out 500ms;
+}
+
+.main_banner {
+    transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.main_banner.active {
+    animation: fadeIn ease-in-out 500ms;
+    -webkit-animation: fadeIn ease-in-out 500ms;
+    -moz-animation: fadeIn ease-in-out 500ms;
+    -o-animation: fadeIn ease-in-out 500ms;
+    -ms-animation: fadeIn ease-in-out 500ms;
 }
 
 // @media (min-width: 576px) {

@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit {
   onWindowScroll(e) {
     // console.log(window.pageYOffset);
 
-    if (window.pageYOffset > 550 && window.innerWidth > 890) {
+    if (window.pageYOffset > 100 && window.innerWidth > 890) {
       let element = document.getElementById('navbar');
       //  element.classList.remove('contain'); 
       element.classList.add('sticky');
