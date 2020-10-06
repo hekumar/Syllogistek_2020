@@ -1,9 +1,9 @@
 <div class="testimonial-container">
     <div class="testimonial-banner" style="background-color: rgba(0, 0, 0, 0.973);">
-        <div id="testiminial_slide" class="carousel" data-interval="5000" data-ride="carousel">
+        <div id="testiminial_slide" class="carousel slide carousel-fade" data-interval="5000" data-ride="carousel">
             <div class="carousel-inner">
 
-                <div *ngFor="let item of testimonials; let i = index" class="testimonial carousel-item" [ngClass]="{'active': i==0 }">
+                <div *ngFor="let item of testimonials; let i = index" class="carousel-item" [ngClass]="{'active': i==0 }">
                     <div class="d-flex align-items-center flex-wrap ">
 
                         <div class="d-sm-block pt-2 pt-sm-0">

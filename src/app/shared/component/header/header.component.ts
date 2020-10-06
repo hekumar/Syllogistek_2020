@@ -66,11 +66,13 @@ export class HeaderComponent implements OnInit {
   }
 
   openmodel() {
+    this.closeNav()
     const modalRef = this.modalService.open(EnrollFormComponent, { size: 'lg', backdrop: "static" });
     // modalRef.componentInstance.person = p;
   }
 
   openAboutModal() {
+    this.closeNav()
     const modalRef = this.modalService.open(AboutComponent, { size: 'lg', backdrop: "static" });
   }
 
