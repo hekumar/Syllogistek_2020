@@ -24,6 +24,13 @@ $TextHoverColor: #1a80ceda;
     // border-top-right-radius: 0;
     // border-bottom-right-radius: 0;
 }
+.social-media-link-1 {
+    top: 160px;
+}
+
+.social-media-link-2 {
+    top:200px;
+}
 
 .social-media-link {
     
@@ -31,6 +38,13 @@ $TextHoverColor: #1a80ceda;
 }
 
 @media screen and (min-width: 768px) {
+    .social-media-link-1 {
+        top: 92px;
+    }
+    
+    .social-media-link-2 {
+        top:135px;
+    }
     .social-media-link {
          left: 3px; 
          right: unset;
