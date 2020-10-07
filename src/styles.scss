@@ -3,13 +3,13 @@
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
 
-// .testimonial.active {
-//     animation: fadeIn ease-in-out 500ms;
-//     -webkit-animation: fadeIn ease-in-out 500ms;
-//     -moz-animation: fadeIn ease-in-out 500ms;
-//     -o-animation: fadeIn ease-in-out 500ms;
-//     -ms-animation: fadeIn ease-in-out 500ms;
-// }
+.testimonial.active {
+    animation: fadeIn linear 500ms;
+    -webkit-animation: fadeIn linear 500ms;
+    -moz-animation: fadeIn linear 500ms;
+    -o-animation: fadeIn linear 500ms;
+    -ms-animation: fadeIn linear 500ms;
+}
 
 
 // .main_banner.active {
