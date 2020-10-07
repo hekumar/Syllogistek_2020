@@ -1,8 +1,8 @@
 <div  class="">
-    <div style="box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);" id="main_banner" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+    <div style="box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);" id="main_banner" class="carousel" data-ride="carousel" data-interval="5000">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <picture>
+            <div  @list1 class="carousel-item active">
+                <picture >
                     <source style="background-repeat: no-repeat;" media="(max-width: 686px)" srcset="../assets/poster1_phone.png">
                     <img class="d-block w-100" src="../assets/poster1.png" alt="First slide">
                 </picture>
@@ -39,7 +39,7 @@
 
                 </div>
             </div>
-            <div class="carousel-item">
+            <div @list1 class="carousel-item"> 
                 <picture>
                     <source  media="(max-width: 686px)" srcset="../assets/poster2_phone.png">
                     <img  class="d-block w-100" src="../assets/poster2.png" alt="Second slide">
@@ -57,7 +57,7 @@
 
                 </div> -->
             </div>
-            <div class="carousel-item">
+            <div @list1 class="carousel-item">
                 <picture>
                     <source media="(max-width: 686px)" srcset="../assets/poster3_phone.png">
                     <img class="d-block w-100" src="../assets/poster3.png" height="90%" alt="Third slide">
