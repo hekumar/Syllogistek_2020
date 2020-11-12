@@ -23,7 +23,7 @@ export class TestimonialSlideComponent implements OnInit {
     {
       name: "Hema Rangarajan",
       imageUrl: "../../../assets/testimony/Hema.jpg",
-      designation: "Senior Analyst, Delloit",
+      designation: "Senior Analyst, Deloitte",
       comment: "Trainer was crisp and very patient to answer all the questions I had. It's surely a useful and very needful session where I could brush-up my skills.",
       course: "SQL"
     },
