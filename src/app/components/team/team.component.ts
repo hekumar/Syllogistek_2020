@@ -70,7 +70,7 @@ export class TeamComponent implements OnInit {
       "name": "Abhijit Sen",
       "position": "Founder & CEO",
       "description": "With 28+ years of Industry experience including heading Delivery of Industry segments across geographies.",
-      "photo": "../assets/people/abhijit.jpg",
+      "photo": "../assets/people/abhijit.png",
       "details" : [{ "head" : "Competencies", "text" :[ "Business Development ~ Strategic Planning ~  Application Development & Maintenance Services ~ Testing Services ~ Customer Relationship Management ~ Operations ~ Team Building & Mentoring ~ Communication and Interpersonal Skills, Assertive Leadership & Team Management" ]} ,
                      {"head" : "Experience", "text" : [  "28 years of IT experience playing various roles. Computer Science Engineer by education has been always working for top companies of repute. Grown in ranks from Systems and Application programmer to Delivery Leadership role working through all the life cycle of IT industry.", 
                                                          "Was Associate Vice President at Infosys before moving out for his own venture. Was the Delivery Head for the Manufacturing Vertical and was also Development Center Head at multiple locations.",
