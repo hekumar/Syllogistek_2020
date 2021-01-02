@@ -25,7 +25,7 @@
                             <a style="cursor: pointer;" [@list1]="i" class="course-card" *ngFor="let item of items" (click)="openCourseModal(item)">
                                 <div class="course_card_header">
                                     <div class="course_card_header-prefix">
-                                        <img class="course_card_header" style="width: 100%" src="../../../assets/{{item.course_img}}">
+                                        <img class="course_card_header" style="width: 100%" loading="lazy" src="../../../assets/{{item.course_img}}">
                                     </div>
                                     <div *ngIf="item.tag" class="course_card_flag course_card_flag--new">{{item.tag}}</div>
                                 </div>
