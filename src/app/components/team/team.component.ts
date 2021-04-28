@@ -102,17 +102,17 @@ export class TeamComponent implements OnInit {
         ]
                     }]
     },
-    {
-      "name": "Rina Sen",
-      "position": "Director - HR, Admin",
-      "description": "Masters in Computer Science with experience in Training, Quality Assurance, Product and Application development.",
-      "photo": "../assets/people/Rina.jpg",
-      "details" : [{ "head" : "", "text" : [  "Rina completed her Graduation in Computer Science and later did her Masters from Jadavpur University. She has had 12 years of global experience in software and product development and testing before she pursued her passion in the education sector.",
-                                               "Since then, she has been involved in imparting training in various Computer Science subjects and is also involved in overall growth of talents. With 10 years of teaching experience, she has had a shining track record of creating high quality minds with a strong hold on concepts in various Computer domains."
-        ]
-                    }
-                   ]
-    },
+//     {
+//       "name": "Rina Sen",
+//       "position": "Director - HR, Admin",
+//       "description": "Masters in Computer Science with experience in Training, Quality Assurance, Product and Application development.",
+//       "photo": "../assets/people/Rina.jpg",
+//       "details" : [{ "head" : "", "text" : [  "Rina completed her Graduation in Computer Science and later did her Masters from Jadavpur University. She has had 12 years of global experience in software and product development and testing before she pursued her passion in the education sector.",
+//                                                "Since then, she has been involved in imparting training in various Computer Science subjects and is also involved in overall growth of talents. With 10 years of teaching experience, she has had a shining track record of creating high quality minds with a strong hold on concepts in various Computer domains."
+//         ]
+//                     }
+//                    ]
+//     },
     {
       "name" : "Srikanth",
       "position" : "IT Adviser",
